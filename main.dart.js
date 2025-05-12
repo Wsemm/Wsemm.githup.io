@@ -79989,7 +79989,7 @@ l.e=!0
 l.Kz()
 s=l.jg()?2:3
 break
-case 2:n=A.Ej(null,"wsem.dawoodi2001@gmail.com",A.as(["subject",o.b.a.a,"body","Name: "+o.c.a.a+"\nEmail: "+o.d.a.a+"\n\n"+o.e.a.a+"\n"],t.N,t.z),"mailto")
+case 2:n=A.Ej(null,"waseem.dawoodi2001@gmail.com",A.as(["subject",o.b.a.a,"body","Name: "+o.c.a.a+"\nEmail: "+o.d.a.a+"\n\n"+o.e.a.a+"\n"],t.N,t.z),"mailto")
 q=5
 s=8
 return A.O(A.Fe(n),$async$$0)
