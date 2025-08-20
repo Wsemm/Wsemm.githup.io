@@ -21,14 +21,21 @@ class AboutScreen extends StatelessWidget {
               Center(
                 child: Column(
                   children: [
-                    const CircleAvatar(
-                      radius: 80,
-                      backgroundImage:
-                          NetworkImage('https://picsum.photos/200'),
-                    ).animate().fadeIn(duration: 600.ms).scale(delay: 200.ms),
+                    Container(
+                      padding: EdgeInsets.only(bottom: 55),
+                      decoration: BoxDecoration(
+                        color: Colors.grey[200],
+                        shape: BoxShape.circle,
+                      ),
+                      child: Image.asset(
+                        "assets/images/wsem.png",
+                        width: 200,
+                        height: 200,
+                      ).animate().fadeIn(duration: 600.ms).scale(delay: 200.ms),
+                    ),
                     const SizedBox(height: 16),
                     Text(
-                      'Your Name',
+                      'Wsem Dawoodi',
                       style: Theme.of(context).textTheme.headlineMedium,
                     ).animate().fadeIn().slideY(delay: 400.ms),
                     const SizedBox(height: 8),
@@ -69,9 +76,14 @@ class AboutScreen extends StatelessWidget {
                   'Dart',
                   'Firebase',
                   'GetX',
+                  'Bloc',
+                  'Ai Tools',
                   'REST APIs',
+                  'Google Maps',
+                  'Sqflite',
                   'Git',
                   'UI/UX Design',
+                  "Codemagic"
                 ]
                     .map((skill) => Chip(
                           label: Text(skill),
@@ -93,19 +105,28 @@ class AboutScreen extends StatelessWidget {
               const SizedBox(height: 16),
               _buildExperienceItem(
                 context,
-                'Senior Flutter Developer',
-                'Company Name',
-                '2020 - Present',
-                'Led the development of multiple Flutter applications, implemented best practices, and mentored junior developers.',
+                'Flutter Developer',
+                'FreeLancer',
+                '2023 - Until Now',
+                'Maintaining and developing mobile applications from scratch',
               ).animate().fadeIn().slideX(delay: 1100.ms),
+              const SizedBox(height: 16),
               const SizedBox(height: 16),
               _buildExperienceItem(
                 context,
                 'Flutter Developer',
-                'Previous Company',
-                '2018 - 2020',
-                'Developed and maintained mobile applications using Flutter, collaborated with cross-functional teams.',
-              ).animate().fadeIn().slideX(delay: 1200.ms),
+                'Remote',
+                '2025 - Until Now',
+                'Maintaining old projects and developers new projects from scratch',
+              ).animate().fadeIn().slideX(delay: 1100.ms),
+              const SizedBox(height: 16),
+              // _buildExperienceItem(
+              //   context,
+              //   'Flutter Developer',
+              //   'Previous Company',
+              //   '2018 - 2020',
+              //   'Developed and maintained mobile applications using Flutter, collaborated with cross-functional teams.',
+              // ).animate().fadeIn().slideX(delay: 1200.ms),
             ],
           ),
         ),

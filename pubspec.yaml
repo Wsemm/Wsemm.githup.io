@@ -71,6 +71,8 @@ flutter:
     - assets/images/max-to-go/
     - assets/images/delicous/
     - assets/images/kefak/
+    - assets/images/wsem.png
+    - assets/images/gym-zone/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
+import 'package:url_launcher/url_launcher.dart';
 import '../models/project_model.dart';
 
 class ProjectDetailsScreen extends StatelessWidget {
@@ -263,8 +264,11 @@ class ProjectDetailsScreen extends StatelessWidget {
                   if (project.projectUrl != null) ...[
                     Center(
                       child: ElevatedButton.icon(
-                        onPressed: () {
-                          // Add URL launcher functionality here
+                        onPressed: () async {
+                          var url = project.projectUrl!;
+                          if (await canLaunchUrl(Uri.parse(url))) {
+                            await launchUrl(Uri.parse(url));
+                          }
                         },
                         icon: const Icon(Icons.link),
                         label: const Text('View Project'),

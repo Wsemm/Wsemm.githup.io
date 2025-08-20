@@ -17,15 +17,19 @@ class ProjectController extends GetxController {
         id: '1',
         name: 'Lemon App',
         description:
-            'A modern mobile application for managing and tracking personal finances with features like expense tracking, budget planning, and financial insights.',
-        imageUrl: 'assets/images/lemon/Screenshot_1746893705.png',
+            'A modern mobile application for managing and tracking personal health and shopping healthy products.',
+        imageUrl: 'assets/images/lemon/lemon-1.jpg',
         screenshots: [
-          'assets/images/lemon/Screenshot_1746893702.png',
-          'assets/images/lemon/Screenshot_1746893696.png',
-          'assets/images/lemon/Screenshot_1746893685.png',
-          'assets/images/lemon/Screenshot_1746893710.png',
-          'assets/images/lemon/Screenshot_1746893717.png',
-          'assets/images/lemon/Screenshot_1746893726.png',
+          'assets/images/lemon/lemon-2.jpg',
+          'assets/images/lemon/lemon-3.jpg',
+          'assets/images/lemon/lemon-4.jpg',
+          'assets/images/lemon/lemon-5.jpg',
+          'assets/images/lemon/lemon-6.jpg',
+          'assets/images/lemon/lemon-7.jpg',
+          'assets/images/lemon/lemon-8.jpg',
+          'assets/images/lemon/lemon-9.jpg',
+          'assets/images/lemon/lemon-10.jpg',
+          'assets/images/lemon/lemon-11.jpg',
         ],
         technologies: [
           'Flutter',
@@ -34,7 +38,7 @@ class ProjectController extends GetxController {
           'OpenSteerMap',
           'Rest API'
         ],
-        projectUrl: 'https://github.com/yourusername/lemon-app',
+        // projectUrl: 'https://github.com/yourusername/lemon-app',
       ),
       Project(
         id: '2',
@@ -51,13 +55,13 @@ class ProjectController extends GetxController {
           'assets/images/ecommerce/Screenshot_1740924920.png',
         ],
         technologies: ['Flutter', 'Firebase', 'GetX', 'Rest API', 'php'],
-        projectUrl: 'https://github.com/yourusername/ecommerce-app',
+        projectUrl: 'https://github.com/Wsemm/Ecommerce-Front-End',
       ),
       Project(
         id: '3',
         name: 'Max To Go',
         description:
-            'A food delivery application with real-time order tracking, restaurant listings, and seamless payment processing.',
+            'A mobile application that helps you to transfer your old home to your new home in the city you want to go.',
         imageUrl: 'assets/images/max-to-go/Screenshot_1746899230.png',
         screenshots: [
           'assets/images/max-to-go/Screenshot_1746899180.png',
@@ -91,13 +95,13 @@ class ProjectController extends GetxController {
           'assets/images/delicous/Screenshot_1746960672.png',
         ],
         technologies: ['Flutter', 'Firebase', 'Bloc', 'Rest API'],
-        projectUrl: 'https://github.com/yourusername/delicous',
+        projectUrl: 'https://github.com/Wsemm/Delicious',
       ),
       Project(
         id: '5',
         name: 'Kefak',
         description:
-            'A comprehensive food delivery platform with advanced features for both customers and restaurant owners.',
+            'A Simple Social Media App for sharing thoughts and ideas with friends.',
         imageUrl: 'assets/images/kefak/Screenshot_1746962796.png',
         screenshots: [
           'assets/images/kefak/Screenshot_1746962796.png',
@@ -112,8 +116,29 @@ class ProjectController extends GetxController {
           'assets/images/kefak/Screenshot_1746962344.png',
         ],
         technologies: ['Flutter', 'Firebase', 'Bloc', 'Rest API'],
-        projectUrl: 'https://github.com/yourusername/kefak',
+        projectUrl: 'https://github.com/Wsemm/Kefak',
       ),
+      Project(
+        id: '6',
+        name: 'Gym Zone',
+        description:
+            'A modern mobile application for managing health & fitness and gyms.',
+        imageUrl: 'assets/images/gym-zone/gym-zone-1.jpg',
+        screenshots: [
+          'assets/images/gym-zone/gym-zone-2.jpg',
+          'assets/images/gym-zone/gym-zone-3.jpg',
+          'assets/images/gym-zone/gym-zone-4.jpg',
+          'assets/images/gym-zone/gym-zone-5.jpg',
+          'assets/images/gym-zone/gym-zone-6.jpg',
+          'assets/images/gym-zone/gym-zone-7.jpg',
+          'assets/images/gym-zone/gym-zone-8.jpg',
+          'assets/images/gym-zone/gym-zone-9.jpg',
+          'assets/images/gym-zone/gym-zone-10.jpg',
+          'assets/images/gym-zone/gym-zone-11.jpg',
+        ],
+        technologies: ['Flutter', 'Firebase', 'GetX', 'Rest API'],
+        // projectUrl: 'https://github.com/yourusername/lemon-app',
+      )
     ]);
   }
 

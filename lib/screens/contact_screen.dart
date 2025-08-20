@@ -119,7 +119,7 @@ class ContactScreen extends StatelessWidget {
                               if (formKey.currentState!.validate()) {
                                 final Uri emailLaunchUri = Uri(
                                   scheme: 'mailto',
-                                  path: 'wsem.dawoodi2001@gmail.com',
+                                  path: 'waseem.dawoodi2001@gmail.com',
                                   queryParameters: {
                                     'subject': subjectController.text,
                                     'body': '''
@@ -177,7 +177,8 @@ ${messageController.text}
                     icon: Icons.link,
                     label: 'LinkedIn',
                     onTap: () async {
-                      const url = 'https://linkedin.com/in/your-profile';
+                      const url =
+                          'https://linkedin.com/in/waseem-dawoudy-a604802b3';
                       if (await canLaunchUrl(Uri.parse(url))) {
                         await launchUrl(Uri.parse(url));
                       }
@@ -188,7 +189,7 @@ ${messageController.text}
                     icon: Icons.code,
                     label: 'GitHub',
                     onTap: () async {
-                      const url = 'https://github.com/your-username';
+                      const url = 'https://github.com/Wsemm';
                       if (await canLaunchUrl(Uri.parse(url))) {
                         await launchUrl(Uri.parse(url));
                       }
@@ -201,7 +202,7 @@ ${messageController.text}
                     onTap: () async {
                       final Uri emailLaunchUri = Uri(
                         scheme: 'mailto',
-                        path: 'your.email@example.com',
+                        path: 'waseem.dawoodi2001@gmail.com',
                       );
                       if (await canLaunchUrl(emailLaunchUri)) {
                         await launchUrl(emailLaunchUri);
