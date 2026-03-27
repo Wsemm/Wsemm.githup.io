@@ -6,6 +6,7 @@ class Project {
   final List<String> screenshots;
   final List<String> technologies;
   final String? projectUrl;
+  final String? projectPlayStoreUrl;
 
   Project({
     required this.id,
@@ -15,5 +16,6 @@ class Project {
     required this.screenshots,
     required this.technologies,
     this.projectUrl,
+    this.projectPlayStoreUrl,
   });
 }

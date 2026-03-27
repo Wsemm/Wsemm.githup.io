@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'screens/projects_screen.dart';
-import 'screens/about_screen.dart';
-import 'screens/contact_screen.dart';
-import 'controllers/navigation_controller.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'screens/home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,56 +13,39 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: 'My Portfolio',
+      title: 'Wsem Dawoodi Portfolio',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
+      theme: ThemeData.dark().copyWith(
+        primaryColor: Colors.cyanAccent,
+        scaffoldBackgroundColor:
+            const Color(0xFF0A0E17), // Deep dark blue-black
+        canvasColor: const Color(0xFF111827), // slightly lighter card color
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Color(0xFF0A0E17),
+          elevation: 0,
+        ),
+        colorScheme: const ColorScheme.dark().copyWith(
+          primary: Colors.cyanAccent,
+          secondary: Colors.blueAccent,
+          surface: const Color(0xFF1E293B),
+        ),
+        textTheme:
+            GoogleFonts.interTextTheme(ThemeData.dark().textTheme).copyWith(
+          displayLarge: GoogleFonts.poppins(
+              fontWeight: FontWeight.bold, color: Colors.white),
+          displayMedium: GoogleFonts.poppins(
+              fontWeight: FontWeight.bold, color: Colors.white),
+          displaySmall: GoogleFonts.poppins(
+              fontWeight: FontWeight.bold, color: Colors.white),
+          headlineMedium: GoogleFonts.poppins(
+              fontWeight: FontWeight.w600, color: Colors.white),
+          titleLarge: GoogleFonts.poppins(fontWeight: FontWeight.w600),
+          bodyLarge: GoogleFonts.inter(color: Colors.grey[300]),
+          bodyMedium: GoogleFonts.inter(color: Colors.grey[400]),
+        ),
         useMaterial3: true,
       ),
-      home: const MainScreen(),
-    );
-  }
-}
-
-class MainScreen extends StatelessWidget {
-  const MainScreen({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    final NavigationController navigationController =
-        Get.put(NavigationController());
-
-    final screens = [
-      const AboutScreen(),
-      const ProjectsScreen(),
-      const ContactScreen(),
-    ];
-
-    return Scaffold(
-      body: Obx(() => screens[navigationController.currentIndex.value]),
-      bottomNavigationBar: Obx(
-        () => NavigationBar(
-          selectedIndex: navigationController.currentIndex.value,
-          onDestinationSelected: navigationController.changePage,
-          destinations: const [
-            NavigationDestination(
-              icon: Icon(Icons.person_outline),
-              selectedIcon: Icon(Icons.person),
-              label: 'About',
-            ),
-            NavigationDestination(
-              icon: Icon(Icons.work_outline),
-              selectedIcon: Icon(Icons.work),
-              label: 'Projects',
-            ),
-            NavigationDestination(
-              icon: Icon(Icons.contact_mail_outlined),
-              selectedIcon: Icon(Icons.contact_mail),
-              label: 'Contact',
-            ),
-          ],
-        ),
-      ),
+      home: const HomePage(),
     );
   }
 }

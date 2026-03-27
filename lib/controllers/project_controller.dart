@@ -136,7 +136,39 @@ class ProjectController extends GetxController {
           'assets/images/gym-zone/gym-zone-10.jpg',
           'assets/images/gym-zone/gym-zone-11.jpg',
         ],
-        technologies: ['Flutter', 'Firebase', 'GetX', 'Rest API'],
+        technologies: [
+          'Flutter',
+          'Firebase',
+          'CodeMagic',
+          'GetX',
+          'ShoreBird',
+          'Rest API'
+        ],
+        // projectUrl: 'https://github.com/yourusername/lemon-app',
+        projectPlayStoreUrl:
+            'https://play.google.com/store/apps/details?id=com.pixllmall.gym_zones&hl=en',
+      ),
+      Project(
+        id: '7',
+        name: 'Oman Sale',
+        description:
+            'beautiful application for buying and selling items that consist of many categories and subcategories.',
+        imageUrl: 'assets/images/oman sale/11.png',
+        screenshots: [
+          'assets/images/oman sale/1.png',
+          'assets/images/oman sale/2.png',
+          'assets/images/oman sale/3.png',
+          'assets/images/oman sale/4.png',
+          'assets/images/oman sale/5.png',
+          'assets/images/oman sale/6.png',
+          'assets/images/oman sale/7.png',
+          'assets/images/oman sale/8.png',
+          'assets/images/oman sale/9.png',
+          'assets/images/oman sale/10.png',
+        ],
+        technologies: ['Flutter', 'GetX', 'CodeMagic', 'Firebase', 'Rest API'],
+        projectPlayStoreUrl:
+            'https://play.google.com/store/apps/details?id=com.pixllmall.sooq.sooq_sale&hl=af',
         // projectUrl: 'https://github.com/yourusername/lemon-app',
       )
     ]);
