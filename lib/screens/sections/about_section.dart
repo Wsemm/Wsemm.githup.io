@@ -134,9 +134,9 @@ class AboutSection extends StatelessWidget {
               const SizedBox(height: 40),
 
               _ExperienceCard(
-                role: 'Flutter Developer',
-                company: 'Remote',
-                period: '2025 - Present',
+                role: 'Flutter Develope',
+                company: 'pixel-tech',
+                period: '2026 - Present',
                 description:
                     'Maintaining old projects and developing new mobile and web applications from scratch with clean architecture.',
                 delayMs: 600,

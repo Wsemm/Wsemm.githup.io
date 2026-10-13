@@ -95,7 +95,7 @@ class ContactSection extends StatelessWidget {
                               value: 'Waseem Dawoodi',
                               onTap: () async {
                                 final url = Uri.parse(
-                                    'https://linkedin.com/in/waseem-dawoudy-a604802b3');
+                                    'https://www.linkedin.com/in/waseem-dawoodi-a604802b3');
                                 if (await canLaunchUrl(url))
                                   await launchUrl(url);
                               },
