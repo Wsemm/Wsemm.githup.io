@@ -77,7 +77,7 @@ class ContactSection extends StatelessWidget {
                             ),
                             const SizedBox(height: 32),
                             _ContactInfoRow(
-                              icon: Icons.email_outlined,
+                              icon: Icons.email,
                               title: 'Email',
                               value: 'waseem.dawoodi2001@gmail.com',
                               onTap: () async {
